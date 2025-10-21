@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Alex Xu's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+      /* Add some style stuff */
+    </style>
+  </head>
+  <body>
+    <nav>
+      <button> 
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 8H28V10.6667H4V8ZM4 14.6667H28V17.3333H4V14.6667ZM4 21.3333H28V24H4V21.3333Z" fill="#121313"/>
+        </svg>
+      </button>
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about_me.html">About me</a></li>
+          <li><a href="experiment.html">Experiments</a></li>
+        </ul>
+    </nav>
+    <header>
+      <h1>About me</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Hi, I'm Alex Xu! I'm a 4th year Interaction Design major committed to streamlining the web. When I'm not playing around on Figma, you can find me dancing, reading, and going to speakeasies with my friends.</h2>
+        <ol>
+          <h3>As a designer and as a person, I value...</h3>
+          <li>Consistency - showing up for others and maintaining work quality</li>
+          <li>Self improvement - reflecting on how I can improve myself and my design skills</li>
+          <li>Honesty - being truthful and designing transparently go hand in hand</li>
+        </ol>
+      </section>
+      <section>
+        <form action="https://httpbin.org/post" method="post" enctype="application/x-www-form-urlencoded">
+          <label for="send-message">Send me a message!</label>
+          <br>
+          <fieldset>
+            <legend>Contact Info</legend>
+            <label for="first-name">First Name:</label>
+            <input type="text" id="name" name="first-name" required>
+            <br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="name" name="last-name" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+          </fieldset>
+          <br>
+          <label for="textarea">Your message:</label> 
+          <br>
+          <textarea id="textarea" name="textarea" rows="4" cols="50"></textarea>
+          <br>
+        </form>
+      </section>
+      <section>
+        <label>Portfolio build progress:</label>
+        <progress max="100" value="30">30%</progress>
+      </section>
+      <div id="random video of me">
+        <p>I play the cello!</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zQ6wENQH_WE?si=8DN2nYEuwvNYGgJd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="/images/AlexXuResume2025.pdf" target="_blank">Resume</a></li>
+          <li><a href="https://www.linkedin.com/in/alex-liaoxing-xu/" target="_blank">Linkedin</a></li>
+          <li><a href="mailto:alxu2003@gmail.com">Email</a></li>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

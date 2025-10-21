@@ -6,53 +6,75 @@
     <title>Alex Xu's Portfolio</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
-      /* Add some style stuff */
+      thumb-nail {
+        display: inline-flex;
+        flex-direction: column;
+        border: 2px solid black;
+        padding: 12px;
+        border-radius: 12px;
+        align-items: center;
+      }
     </style>
-    
   </head>
   <body>
-    <header>
-      <h1>Alex is a product designer. Blah Blah.</h1>
-      <nav>
+    <dialog open>
+      <p>Hi CSE134B tutors! I actually already have a portfolio site, BUT it's on Webflow, so I'm taking this opportunity to try seeing how it would look if I built it. Please click the case study thumbnails and nav links to find all the tags; I have more case studies than this I swear, I just don't have the time to recreate them here LOL.</p>
+      <form method="dialog">
+        <button>OK</button>
+      </form>
+    </dialog> 
+    <nav>
+      <button> 
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M4 8H28V10.6667H4V8ZM4 14.6667H28V17.3333H4V14.6667ZM4 21.3333H28V24H4V21.3333Z" fill="#121313"/>
+        </svg>
+      </button>
         <ul>
+          <li><a href="home.html">Home</a></li>
           <li><a href="about_me.html">About me</a></li>
           <li><a href="experiment.html">Experiments</a></li>
         </ul>
-      </nav>
+    </nav>
+    <header>
+      <h1>Alex is a product designer. Blah Blah.</h1>
     </header>
     <main>
-      <section id="Summer 2025 Internship">
+      <section id="summer-2025-internship">
         <h2>Summer 2025 Internship</h2>
-        <article>
-          <h3>Bridging design and development</h3>
-          <img src="/images/StorybookThumb.png" alt="storybook documentation of Arity color palette" width="400" />
-          <span>#CrossFunctional</span>
-          <span>#Prototyping</span>
-          <span>#Coding</span>
-        </article>
-        <article>
+        <a href="storybook_case_study.html">
+        <thumb-nail>
+          <article>
+            <h3>Bridging design and development</h3>
+            <img src="/images/home/StorybookThumb.png" alt="storybook documentation of Arity color palette" width="400" />
+            <p><span>#CrossFunctional</span><span>#Prototyping</span><span>#Coding</span></p>
+          </article>
+        </thumb-nail>
+        </a>
+        <!-- <article>
           <h3>Informing data platform strategy</h3>
           <img src="/images/StorybookThumb.png" alt="Data platform research on Mural screenshot" width="400" />
           <span>#MarketResearch</span>
           <span>#SelfStructured</span>
-        </article>
+        </article> -->
       </section>
-      <section id="Previous Work">
+      <section id="previous-work">
         <h2>Previous Work</h2>
-        <article>
-          <h3>Challenging the housing crisis</h3>
-          <img src="/images/D4SDThumb.png" alt="Design for San Diego website homepage picture" width="400"/>
-          <span>#VisualDesign</span>
-          <span>#BrandStrategy</span>
-          <span>#CrossFunctional</span>
-        </article>
-        <article>
-          <h3>Defining nonprofit branding</h3>
-          <img src="/images/YFMThumb.png" alt="Youth Futures Movement nonprofit homepage picture" width="400"/>
-          <span>#StakeholderRelations</span>
-          <span>#BrandStrategy</span>
-          <span>#UserResearch</span>
-        </article>
+        <thumb-nail>
+          <article>
+            <h3>Challenging the housing crisis</h3>
+            <img src="/images/home/D4SDThumb.png" alt="Design for San Diego website homepage picture" width="400"/>
+            <p><span>#VisualDesign</span><span>#BrandStrategy</span><span>#CrossFunctional</span></p>
+          </article>
+        </thumb-nail>
+        <a href="yfm_case_study.html">
+          <thumb-nail>
+            <article>
+              <h3>Defining nonprofit branding</h3>
+              <img src="/images/home/YFMThumb.png" alt="Youth Futures Movement nonprofit homepage picture" width="400"/>
+              <p><span>#StakeholderRelations</span><span>#BrandStrategy</span><span>#UserResearch</span></p>
+            </article>
+          </thumb-nail>
+        </a>
       </section>
     </main>
 
@@ -65,5 +87,22 @@
         </ul>
       </nav>
     </footer>
+    <script>
+      // Define a custom element that only logs to the console.
+      class HelloWorld extends HTMLElement {
+        connectedCallback() {
+          // Only logging — no DOM changes.
+          console.log('Hello world!');
+        }
+      }
+
+      // Register the element. Name must include a hyphen.
+      customElements.define('hello-world', HelloWorld);
+    </script>
+    <hello-world></hello-world>
+    <noscript>
+      <h1>Welcome! JavaScript is disabled in your browser.</h1>
+      <p>Please enable JavaScript for the best experience.</p>
+    </noscript>
   </body>
 </html>
